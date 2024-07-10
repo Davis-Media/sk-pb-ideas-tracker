@@ -9,5 +9,8 @@ export default defineConfig({
 		alias: {
 			$lib: path.resolve('./src/lib')
 		}
-	}
+	},
+  build: {
+    outDir: "../pocketbase/pb_public"
+  }
 });
