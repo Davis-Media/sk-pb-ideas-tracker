@@ -1,3 +1,5 @@
 import PocketBase from 'pocketbase';
 
-export const pb = new PocketBase("http://0.0.0.0:8090");
+const url = import.meta.env.PROD ? import.meta.env.VITE_PROD_PB_URL : "http://localhost:8090"
+
+export const pb = new PocketBase(url);

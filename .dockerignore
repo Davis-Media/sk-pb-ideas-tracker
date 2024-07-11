@@ -4,4 +4,3 @@ web/node_modules
 *.md
 pb/pb_data
 web/pb_public
-web/.env.local
