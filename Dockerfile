@@ -13,7 +13,7 @@ FROM golang:1.22-alpine AS base-pb
 WORKDIR /app
 
 FROM base-pb AS build-pb
-COPY /pocketbase/go.mod /pocketbase/go.sum /pocketbase/main.go /app/
+COPY /pb/go.mod /pb/go.sum /pb/main.go /app/
 RUN CGO_ENABLED=0 go build -o my-pb
 
 FROM base-pb

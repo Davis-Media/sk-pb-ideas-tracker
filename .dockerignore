@@ -2,6 +2,6 @@ web/node_modules
 .git
 .gitignore
 *.md
-pocketbase/pb_data
+pb/pb_data
 web/pb_public
 web/.env.local
