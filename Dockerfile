@@ -18,6 +18,6 @@ RUN CGO_ENABLED=0 go build -o my-pb
 
 FROM base-pb
 COPY --from=build-pb /app/my-pb /app/my-pb
-COPY --from=build-web /app/pb_public /app/pb_public
+COPY --from=build-web /app/build /app/pb_public
 EXPOSE 8090
 CMD [ "./my-pb", "serve", "--http=0.0.0.0:8090"]
